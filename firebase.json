@@ -1,9 +1,11 @@
 {
   "hosting": {
     "target": "app",
-    "public": "www",
+    "public": "dist",
     "ignore": [
-      "**/.*"
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
     ],
     "headers": [
       {

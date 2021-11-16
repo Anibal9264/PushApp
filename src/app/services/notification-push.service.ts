@@ -11,20 +11,20 @@ export class NotificationPushService {
   
   constructor(private afMessaging: AngularFireMessaging) { }
  
-  requestPermission(){
+  requestPermission() {
     return this.afMessaging.requestToken.pipe(
       tap(token => {
-        console.log("the token :" , token)
+        console.log('Store token to server: ', token);
       })
-    )
+    );
   }
-
+ 
   getMessages() {
     return this.afMessaging.messages;
   }
-
-  deleteToken(){
-    if(this.token){
+ 
+  deleteToken() {
+    if (this.token) {
       this.afMessaging.deleteToken(this.token);
       this.token = null;
     }
