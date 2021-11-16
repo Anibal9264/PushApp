@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "notificaciones-56016": {
+      "hosting": {
+        "app": [
+          "notificaciones-56016"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "notificaciones-56016"
+  }
+}
